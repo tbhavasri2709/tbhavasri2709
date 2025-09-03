@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhava Sri's Portfolio</title>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #f3e5f5); /* soft teal to lavender */
+      color: #2c2c54;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #4a148c; /* deep violet */
+      color: white;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #80deea; /* soft teal */
+    }
+
+    /* Profile Section */
+    .profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 70px 10%;
+      background: #ffffffee;
+    }
+
+    .profile img {
+      width: 230px;
+      border-radius: 50% 40% / 45% 55%; /* oval shape */
+      margin: 20px;
+      border: 5px solid #ba68c8;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    .profile-text {
+      max-width: 600px;
+      margin: 20px;
+    }
+    .profile-text h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #4a148c;
+    }
+    .profile-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Projects Section */
+    .projects {
+      padding: 70px 10%;
+      background: #f3e5f5;
+      text-align: center;
+    }
+    .projects h2 {
+      font-size: 30px;
+      margin-bottom: 40px;
+      color: #4a148c;
+    }
+
+    .project-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .project {
+      background: #ffffffee;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-8px);
+    }
+    .project h3 {
+      margin-bottom: 12px;
+      color: #009688;
+    }
+    .project p {
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* Contact Section */
+    .contact {
+      padding: 70px 10%;
+      background: #ffffffee;
+      text-align: center;
+    }
+    .contact h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #4a148c;
+    }
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input, 
+    .contact textarea {
+      padding: 14px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 15px;
+      transition: border 0.3s;
+    }
+    .contact input:focus,
+    .contact textarea:focus {
+      border: 1px solid #009688;
+    }
+    .contact button {
+      padding: 14px;
+      background: #4a148c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background: #2e0854;
+    }
+
+    /* Footer */
+    footer {
+      background: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 20px 10%;
+      margin-top: 40px;
+    }
+    .social-icons {
+      margin: 10px 0;
+    }
+    .social-icons a {
+      color: #80deea;
+      margin: 0 12px;
+      font-size: 26px;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: white;
+    }
+    .copyright {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Bhava Sri's Portfolio</h1>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#footer">Links</a>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile" id="profile">
+    <img src= "https://images.pexels.com/photos/374006/pexels-photo-374006.jpeg"=alt="Laptop with workspace">
+    <div class="profile-text">
+      <h2>Hello, I'm Bhava Sri</h2>
+      <p>
+        I’m an enthusiastic <strong>Frontend Developer</strong> passionate about creating 
+        modern, responsive, and interactive websites.  
+        <br><br>
+        Skilled in <strong>HTML, CSS, JavaScript</strong>, and exploring frameworks 
+        like <strong>React</strong>, I focus on delivering clean code and 
+        engaging designs that enhance user experiences.  
+        <br><br>
+        I enjoy transforming ideas into digital reality and constantly 
+        learning new tools to stay updated in the fast-paced tech world.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+      <div class="project">
+        <h3>E-commerce Website</h3>
+        <p>A responsive online store built with HTML, CSS, and JavaScript including payment integration.</p>
+      </div>
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A modern and animated portfolio to showcase skills and projects with smooth UI/UX.</p>
+      </div>
+      <div class="project">
+        <h3>To-Do App</h3>
+        <p>A JavaScript-based to-do list app with local storage support for persistent task management.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="copyright">
+      © 2025 Bhava Sri. All Rights Reserved.
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href'))
+                .scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    // Contact form submission (demo)
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
